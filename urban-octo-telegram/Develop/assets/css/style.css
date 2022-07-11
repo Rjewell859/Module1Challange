@@ -1,5 +1,7 @@
-
-/* Use comments to explain this ctrl + K + c */
+/* The universal selector selects all HTML, box sizing: border-box allows 
+width and height properties to account for padding and border. 
+Padding (the space between an element and its border) and margin 
+(the space outside the elements border) are set to 0*/
 
 * {
     box-sizing: border-box;
@@ -7,9 +9,15 @@
     margin: 0;
 }
 
+/* This sets the background of the body to an off white color. */
+
 body {
     background-color: #d9dcd6;
 }
+
+/* Set header padding to 20 pixels, set font-family to Trebuchet MS with a series of other 
+families in case a user does not have the font. Header background-color set set to a 
+shade of grayish blue with a font color of white. */
 
 header {
     padding: 20px;
@@ -18,14 +26,23 @@ header {
     color: #ffffff;
 }
 
+/* For h1 elements in the header, display inline-block (display inline with control over
+width and height) and set font-size to 48 pixels. */
+
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Set span font color to off white */
+
 span {
     color: #d9dcd6;
 }
+
+/* Position the nav in the header using pading-top, margin-right and float: right;
+Set the nav font-family to Gill sans, with alternative options. Then set font-size
+to 20 pixels. */
 
 header nav {
     padding-top: 15px;
@@ -36,30 +53,35 @@ header nav {
 }
 
 /* Removes bullet points from the list in the navigation bar */
+
 header nav ul {
     list-style-type: none;
 }
 
 /* Makes the links in the navigation bar organized in a single line */
+
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
 /* Removes the default underline to the links in the navigation bar  */
+
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
 /* Sets the font size of all paragraph elements to 16 pixels */
+
 p {
     font-size: 16px;
 }
 
 /* Sets the background image at 800 pixels high with its full width, and 25 pixels of space below. 
 Next provides the image url to allow the user to view the background image, sets the background 
-image to scale and cover the entire background and centers it. */
+image to scale and cover the entire background then centers it. */
+
 #background {
     height: 800px;
     width: 100%;
@@ -70,13 +92,19 @@ image to scale and cover the entire background and centers it. */
 }
 
 /* Specifies that the content section should span 3 quarters across the website, 
-displaying inline (to allow for the benefits section to be positioned next to it) 
+displaying inline block (to allow for the benefits section to be positioned next to it) 
 and provides 20 pixels of space to the left of the content section.  */
+
 #contentSection {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/* Sets 20 pixels of space to the right of the benefits section, sets 20 pixels of space between the 
+element and its border all around. The section is placed on the right with float right.
+Width is 20% of the body, height is 100% of the body. Font family is set, and background
+color to a light blue. */
 
 #benefitsSection {
     margin-right: 20px;
@@ -89,32 +117,45 @@ and provides 20 pixels of space to the left of the content section.  */
     background-color: #2589bd;
 }
 
+/* Sets all elements with a class of float-left to float to the left with a right margin of 25 pixels.  */
+
 .float-left {
     float: left;
     margin-right: 25px;
 }
+
+/* Sets all elements with a class of float-right to float to the right with a left margin of 25 pixels. */
 
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Sets the bottom margin to 32 pixels for all elements with a class of benefits, and the font color to white. */
 
 .benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Sets the bottom margin to 10 pixels for h3 elements in the benefits class and center aligns the text. */
+
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+
+/* Sets images in benefits class to display as block with an all around margin of 10 pixels and max-width 150 pixels. */
 
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+
+/* Sets elements with the content class to have a 20 pixel bottom margin, 50 pixels all around padding
+and a height of 300 pixels. Then sets font family to Gill Sans, background-color of light blue,
+and font color of white. */
 
 .content {
     margin-bottom: 20px;
@@ -125,14 +166,22 @@ and provides 20 pixels of space to the left of the content section.  */
     color: #ffffff;
 }
 
+/* Sets the images in the content class to have a max height of 200 pixels. */
+
 .content img {
     max-height: 200px;
 }
+
+/* For h2 elements in the content section, set margin bottom to 20 pixels,
+and font size to 36 pixels. */
 
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+/* For the footer, set the all around padding to 30 pixels, clear floating elements on both sides,
+font family is set to Trebuchet MS and the text is aligned in the center. */
 
 footer {
     padding: 30px;
@@ -140,6 +189,8 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
+/* Sets the font size for h2 elements in the footer to 20 pixels */
 
 footer h2 {
     font-size: 20px;
