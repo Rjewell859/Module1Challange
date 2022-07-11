@@ -16,3 +16,5 @@ being repeated several times accross the file.
 Finally I added detailed comments explaining everything in the CSS step by step.
 
 https://rjewell859.github.io/Module1Challange/
+
+![horiseonpicture](https://user-images.githubusercontent.com/66131189/178326879-54ff2fe2-7257-4826-8883-9b91fa6fe29c.JPG)
